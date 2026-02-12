@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages --experimental-minify"
+    "pages:build": "npx @cloudflare/next-on-pages --experimental-minify && [ -d .vercel/output/static/_worker.js ] && mv .vercel/output/static/_worker.js/index.js .vercel/output/_worker.js && rm -rf .vercel/output/static/_worker.js || [ -f .vercel/output/static/_worker.js ] && mv .vercel/output/static/_worker.js .vercel/output/_worker.js || true"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

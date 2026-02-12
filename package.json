@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages"
+    "pages:build": "npx @cloudflare/next-on-pages && cp .vercel/output/static/_worker.js .vercel/output/_worker.js 2>/dev/null || true"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

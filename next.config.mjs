@@ -9,10 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // 🚀 必须添加以下部分，确保兼容 Cloudflare Pages
-  experimental: {
-    runtime: 'edge',
-  },
+  // ⚡️ Cloudflare Pages 已经由 @cloudflare/next-on-pages 处理
+  // 不再需要在全局配置中指定 experimental.runtime
 }
 
 export default nextConfig

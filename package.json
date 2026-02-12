@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages --experimental-minify && [ -d .vercel/output/static/_worker.js ] && cp .vercel/output/static/_worker.js/index.js .vercel/output/_worker.js || [ -f .vercel/output/static/_worker.js ] && cp .vercel/output/static/_worker.js .vercel/output/_worker.js || true"
+    "pages:build": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -64,7 +64,7 @@
     "@types/node": "20.17.16",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^104.20",
     "eslint": "^8",
     "eslint-config-next": "14.2.21",
     "postcss": "^8.5",

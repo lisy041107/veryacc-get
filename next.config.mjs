@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone', // 加上这一行
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -9,8 +10,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // ⚡️ Cloudflare Pages 已经由 @cloudflare/next-on-pages 处理
-  // 不再需要在全局配置中指定 experimental.runtime
 }
 
 export default nextConfig

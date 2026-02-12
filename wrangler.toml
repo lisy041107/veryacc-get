@@ -1,4 +1,4 @@
-name = "veryacc"
-compatibility_date = "2024-09-23"
-compatibility_flags = [ "nodejs_compat" ]
+name = "veryacc-get"
+compatibility_date = "2024-11-01"
+compatibility_flags = [ "nodejs_compat" ] # 必须有这一行
 pages_build_output_dir = ".vercel/output"

@@ -2,6 +2,8 @@ name = "veryacc-get"
 compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_compat"]
 
+# 关键：告诉 Cloudflare 编译产物在哪里
+pages_build_output_dir = ".vercel/output"
+
 [build]
 command = "npm run pages:build"
-path = ".vercel/output"
